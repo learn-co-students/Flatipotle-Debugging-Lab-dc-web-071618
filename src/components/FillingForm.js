@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const FillingForm = (props) => {
+const FillingForm = props => {
   return (
     <div>
-      <h1><label htmlFor="fillings">Fillings</label></h1>
+      <h1>
+        <label htmlFor="fillings">Fillings</label>
+      </h1>
       <div className="inline fields ui centered grid">
         <div className="field">
           <div className="ui checkbox">
@@ -12,9 +14,14 @@ const FillingForm = (props) => {
               type="checkbox"
               value="White Rice"
               name="fillings"
-              onChange={this.props.handleChange}
+              onChange={props.handleOnChange}
             />
-            <img src={require('../images/fillings/white-rice.png')} height="100px" width="100px" alt="white rice" />
+            <img
+              src={require("../images/fillings/white-rice.png")}
+              height="100px"
+              width="100px"
+              alt="white rice"
+            />
             <label htmlFor="white-rice">White Rice</label>
           </div>
         </div>
@@ -26,9 +33,14 @@ const FillingForm = (props) => {
               type="checkbox"
               value="Brown Rice"
               name="fillings"
-              onChange={this.props.handleChange}
+              onChange={props.handleOnChange}
             />
-            <img src={require('../images/fillings/brown-rice.png')} height="100px" width="100px" alt="brown rice" />
+            <img
+              src={require("../images/fillings/brown-rice.png")}
+              height="100px"
+              width="100px"
+              alt="brown rice"
+            />
             <label htmlFor="brown-rice">Brown Rice</label>
           </div>
         </div>
@@ -40,9 +52,14 @@ const FillingForm = (props) => {
               type="checkbox"
               value="Black Beans"
               name="fillings"
-              onChange={this.props.handleChange}
+              onChange={props.handleOnChange}
             />
-            <img src={require('../images/fillings/black-beans.png')} height="100px" width="100px" alt="black beans" />
+            <img
+              src={require("../images/fillings/black-beans.png")}
+              height="100px"
+              width="100px"
+              alt="black beans"
+            />
             <label htmlFor="black-beans">Black Beans</label>
           </div>
         </div>
@@ -54,9 +71,14 @@ const FillingForm = (props) => {
               type="checkbox"
               value="Pinto Beans"
               name="fillings"
-              onChange={this.props.handleChange}
+              onChange={props.handleOnChange}
             />
-            <img src={require('../images/fillings/pinto-beans.png')} height="100px" width="100px" alt="pinto beans" />
+            <img
+              src={require("../images/fillings/pinto-beans.png")}
+              height="100px"
+              width="100px"
+              alt="pinto beans"
+            />
             <label htmlFor="pinto">Pinto Beans</label>
           </div>
         </div>
@@ -68,15 +90,20 @@ const FillingForm = (props) => {
               type="checkbox"
               value="Fajita Veggies"
               name="fillings"
-              onChange={this.props.handleChange}
+              onChange={props.handleOnChange}
             />
-            <img src={require('../images/fillings/fajita-veggies.png')} height="100px" width="100px" alt="fajita veggies" />
+            <img
+              src={require("../images/fillings/fajita-veggies.png")}
+              height="100px"
+              width="100px"
+              alt="fajita veggies"
+            />
             <label htmlFor="veg">Fajita Veggies</label>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FillingForm
+export default FillingForm;
